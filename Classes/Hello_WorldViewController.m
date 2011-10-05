@@ -27,7 +27,6 @@
 	//NSString *digit = [[sender titleLabel]text];?????
 	NSString *digit = sender.titleLabel.text;
 	if (userIsInTheMiddleOfTypingANumber) {
-		// [display setText:[[display text] stringByAppendingString:digit]];
 		display.text = [display.text stringByAppendingString:digit];
 	}else {
 		display.text = digit;
