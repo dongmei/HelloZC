@@ -24,7 +24,6 @@
 
 - (IBAction)digitPress:(UIButton *)sender
 {
-	//NSString *digit = [[sender titleLabel]text];?????
 	NSString *digit = sender.titleLabel.text;
 	if (userIsInTheMiddleOfTypingANumber) {
 		display.text = [display.text stringByAppendingString:digit];
